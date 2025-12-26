@@ -85,7 +85,7 @@ FROM one_to_many_2.students limit 5;]]></query>
 				<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#666666"/>
 			</box>
 		</element>
-		<element kind="staticText" uuid="b90e555d-cc8a-4393-a5dd-9dd53ed4fe83" x="184" y="19" width="92" height="15" hTextAlign="Center" style="Column header">
+		<element kind="staticText" uuid="b90e555d-cc8a-4393-a5dd-9dd53ed4fe83" x="184" y="19" width="76" height="15" hTextAlign="Center" style="Column header">
 			<text><![CDATA[WEIGHT]]></text>
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="326f6125-87b5-420f-a262-5b080645b971"/>
 			<box style="Column header">
@@ -96,7 +96,7 @@ FROM one_to_many_2.students limit 5;]]></query>
 				<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#666666"/>
 			</box>
 		</element>
-		<element kind="staticText" uuid="aeda5b3c-90ad-4263-8a03-bd21e20e7a8a" x="276" y="19" width="92" height="15" hTextAlign="Center" style="Column header">
+		<element kind="staticText" uuid="aeda5b3c-90ad-4263-8a03-bd21e20e7a8a" x="260" y="19" width="80" height="15" hTextAlign="Center" style="Column header">
 			<text><![CDATA[HEIGHT]]></text>
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4fcc72fa-2645-4c6c-8a43-2b97410dfb92"/>
 			<box style="Column header">
@@ -107,7 +107,7 @@ FROM one_to_many_2.students limit 5;]]></query>
 				<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#666666"/>
 			</box>
 		</element>
-		<element kind="staticText" uuid="8462b8bf-059d-4929-8d3b-91cf569e959c" x="368" y="19" width="92" height="15" hTextAlign="Center" style="Column header">
+		<element kind="staticText" uuid="8462b8bf-059d-4929-8d3b-91cf569e959c" x="340" y="19" width="80" height="15" hTextAlign="Center" style="Column header">
 			<text><![CDATA[GRADE]]></text>
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59c7fcd8-3d7a-4f41-9b8d-c39e5956f68f"/>
 			<box style="Column header">
@@ -118,7 +118,7 @@ FROM one_to_many_2.students limit 5;]]></query>
 				<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#666666"/>
 			</box>
 		</element>
-		<element kind="staticText" uuid="7ec22de0-b533-468f-ab31-e47f57fddb68" x="460" y="19" width="95" height="15" hTextAlign="Center" style="Column header">
+		<element kind="staticText" uuid="7ec22de0-b533-468f-ab31-e47f57fddb68" x="420" y="19" width="135" height="15" hTextAlign="Center" style="Column header">
 			<text><![CDATA[DATETIME]]></text>
 			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e59eea3c-14c5-4b85-ab9d-a3184877d204"/>
 			<box style="Column header">
@@ -143,19 +143,19 @@ FROM one_to_many_2.students limit 5;]]></query>
 				<expression><![CDATA[$F{student_fullname}]]></expression>
 				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e04fd89f-6feb-4815-a087-fc1893e8044f"/>
 			</element>
-			<element kind="textField" uuid="6b390fb5-69d6-4558-8fbc-90b58f3932d1" x="184" y="0" width="92" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
+			<element kind="textField" uuid="6b390fb5-69d6-4558-8fbc-90b58f3932d1" x="184" y="0" width="76" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
 				<expression><![CDATA[$F{student_weight}]]></expression>
 				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="326f6125-87b5-420f-a262-5b080645b971"/>
 			</element>
-			<element kind="textField" uuid="199c0b47-15de-45a6-86e6-6e81b7194e3b" x="276" y="0" width="92" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
+			<element kind="textField" uuid="199c0b47-15de-45a6-86e6-6e81b7194e3b" x="260" y="0" width="80" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
 				<expression><![CDATA[$F{student_height}]]></expression>
 				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4fcc72fa-2645-4c6c-8a43-2b97410dfb92"/>
 			</element>
-			<element kind="textField" uuid="cddf506b-4b8f-4f30-955f-afbbf45e868e" x="368" y="0" width="92" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
+			<element kind="textField" uuid="cddf506b-4b8f-4f30-955f-afbbf45e868e" x="340" y="0" width="80" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
 				<expression><![CDATA[$F{student_grade}]]></expression>
 				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59c7fcd8-3d7a-4f41-9b8d-c39e5956f68f"/>
 			</element>
-			<element kind="textField" uuid="669e2cc5-9c3c-45d1-9458-8e297af9433e" x="460" y="0" width="95" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
+			<element kind="textField" uuid="669e2cc5-9c3c-45d1-9458-8e297af9433e" x="420" y="0" width="135" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
 				<expression><![CDATA[$F{currentdatetime}]]></expression>
 				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e59eea3c-14c5-4b85-ab9d-a3184877d204"/>
 			</element>
