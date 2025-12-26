@@ -1,0 +1,190 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="StudentList_Basic_Template" language="java" pageWidth="595" pageHeight="342" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="a1f690a3-5977-4467-85f8-6b0bcd5b7210">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value="b25lX3RvX21hbnlfMi5zdHVkZW50cyBBUyAsMTA0LDEyMixkMjMwMWJkYi03MDFhLTRhMjItYWI4&#xa;Yy1mMTQ1NDA3MDczNDI7"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="First Report using MySQL"/>
+	<style name="Title" fontName="Arial" fontSize="26.0" bold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18.0"/>
+	<style name="Column header" forecolor="#666666" fontName="Arial" fontSize="12.0" bold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12.0"/>
+	<query language="SQL"><![CDATA[SELECT student_id,
+	student_fullname,
+	student_weight,
+	student_height,
+	student_grade,
+	currentdatetime
+FROM one_to_many_2.students limit 5;]]></query>
+	<field name="student_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="student_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="student_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="student_fullname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="student_fullname"/>
+		<property name="com.jaspersoft.studio.field.label" value="student_fullname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="student_weight" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.name" value="student_weight"/>
+		<property name="com.jaspersoft.studio.field.label" value="student_weight"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="student_height" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="student_height"/>
+		<property name="com.jaspersoft.studio.field.label" value="student_height"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="student_grade" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="student_grade"/>
+		<property name="com.jaspersoft.studio.field.label" value="student_grade"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="currentdatetime" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="currentdatetime"/>
+		<property name="com.jaspersoft.studio.field.label" value="currentdatetime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<background splitType="Stretch"/>
+	<title height="70" splitType="Stretch">
+		<element kind="image" uuid="363fa2ad-70fc-43cb-9062-e6c62c7f48fc" x="275" y="0" width="300" height="70">
+			<expression><![CDATA["images/leaf_banner_gray.png"]]></expression>
+		</element>
+		<element kind="staticText" uuid="6f9c1004-6140-4588-9c4f-d75824835765" x="0" y="0" width="552" height="46" vTextAlign="Middle" style="Title">
+			<text><![CDATA[Jasper Studio Template Free]]></text>
+		</element>
+		<element kind="staticText" uuid="8e16dabd-2e54-471b-9652-83e1d55379ec" x="117" y="46" width="157" height="22" style="SubTitle">
+			<text><![CDATA[Apply MySQL]]></text>
+		</element>
+	</title>
+	<pageHeader splitType="Stretch"/>
+	<columnHeader height="36" splitType="Stretch">
+		<element kind="line" uuid="544e89f7-0fd1-4142-aa23-e335e3be7007" positionType="FixRelativeToBottom" x="0" y="35" width="555" height="1">
+			<pen lineWidth="0.5" lineColor="#999999"/>
+		</element>
+		<element kind="staticText" uuid="2cd12448-dbda-41f3-a8f2-39f7e0393703" x="0" y="19" width="92" height="15" hTextAlign="Center" style="Column header">
+			<text><![CDATA[ID]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fb413930-2810-4be7-814d-a863ca9af594"/>
+			<box topPadding="1" leftPadding="1" rightPadding="1" style="Column header">
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="f537c54f-a32e-4faa-8eac-15ef474fe084" x="92" y="19" width="92" height="15" hTextAlign="Center" style="Column header">
+			<text><![CDATA[FULLNAME]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e04fd89f-6feb-4815-a087-fc1893e8044f"/>
+			<box style="Column header">
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#666666"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#666666"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="b90e555d-cc8a-4393-a5dd-9dd53ed4fe83" x="184" y="19" width="92" height="15" hTextAlign="Center" style="Column header">
+			<text><![CDATA[WEIGHT]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="326f6125-87b5-420f-a262-5b080645b971"/>
+			<box style="Column header">
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#666666"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#666666"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="aeda5b3c-90ad-4263-8a03-bd21e20e7a8a" x="276" y="19" width="92" height="15" hTextAlign="Center" style="Column header">
+			<text><![CDATA[HEIGHT]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4fcc72fa-2645-4c6c-8a43-2b97410dfb92"/>
+			<box style="Column header">
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#666666"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#666666"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="8462b8bf-059d-4929-8d3b-91cf569e959c" x="368" y="19" width="92" height="15" hTextAlign="Center" style="Column header">
+			<text><![CDATA[GRADE]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59c7fcd8-3d7a-4f41-9b8d-c39e5956f68f"/>
+			<box style="Column header">
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#666666"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#666666"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="7ec22de0-b533-468f-ab31-e47f57fddb68" x="460" y="19" width="95" height="15" hTextAlign="Center" style="Column header">
+			<text><![CDATA[DATETIME]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e59eea3c-14c5-4b85-ab9d-a3184877d204"/>
+			<box style="Column header">
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+			</box>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="20" splitType="Stretch">
+			<element kind="line" uuid="cb229859-ab9a-4aa3-afa2-84439642f4ee" positionType="FixRelativeToBottom" x="0" y="15" width="555" height="1">
+				<pen lineWidth="0.5" lineColor="#999999"/>
+			</element>
+			<element kind="textField" uuid="a66ac90b-f6e5-4d6e-888c-b0e43c3a771a" x="0" y="0" width="92" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
+				<expression><![CDATA[$F{student_id}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fb413930-2810-4be7-814d-a863ca9af594"/>
+			</element>
+			<element kind="textField" uuid="36dda386-7067-425c-a431-4a2f5d264078" x="92" y="0" width="92" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
+				<expression><![CDATA[$F{student_fullname}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e04fd89f-6feb-4815-a087-fc1893e8044f"/>
+			</element>
+			<element kind="textField" uuid="6b390fb5-69d6-4558-8fbc-90b58f3932d1" x="184" y="0" width="92" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
+				<expression><![CDATA[$F{student_weight}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="326f6125-87b5-420f-a262-5b080645b971"/>
+			</element>
+			<element kind="textField" uuid="199c0b47-15de-45a6-86e6-6e81b7194e3b" x="276" y="0" width="92" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
+				<expression><![CDATA[$F{student_height}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="4fcc72fa-2645-4c6c-8a43-2b97410dfb92"/>
+			</element>
+			<element kind="textField" uuid="cddf506b-4b8f-4f30-955f-afbbf45e868e" x="368" y="0" width="92" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
+				<expression><![CDATA[$F{student_grade}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="59c7fcd8-3d7a-4f41-9b8d-c39e5956f68f"/>
+			</element>
+			<element kind="textField" uuid="669e2cc5-9c3c-45d1-9458-8e297af9433e" x="460" y="0" width="95" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
+				<expression><![CDATA[$F{currentdatetime}]]></expression>
+				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e59eea3c-14c5-4b85-ab9d-a3184877d204"/>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="45" splitType="Stretch">
+		<element kind="line" uuid="401e0e59-de38-4dd2-8257-418cb489177c" positionType="FixRelativeToBottom" x="-1" y="30" width="555" height="1">
+			<pen lineWidth="0.5" lineColor="#999999"/>
+		</element>
+		<element kind="staticText" uuid="3145eca4-5d6b-4e64-8279-939cbc16de97" x="0" y="15" width="92" height="15" hTextAlign="Center" style="Column header">
+			<text><![CDATA[Total]]></text>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="fb413930-2810-4be7-814d-a863ca9af594"/>
+			<box topPadding="1" leftPadding="1" rightPadding="1" style="Column header">
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<leftPen lineWidth="0.25" lineStyle="Solid" lineColor="#666666"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.25" lineStyle="Solid" lineColor="#666666"/>
+			</box>
+		</element>
+		<element kind="textField" uuid="041309a1-5354-46c5-b310-41fff60c6061" x="92" y="15" width="92" height="15" hTextAlign="Center" vTextAlign="Middle" style="Detail">
+			<expression><![CDATA[$V{REPORT_COUNT}]]></expression>
+			<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="e04fd89f-6feb-4815-a087-fc1893e8044f"/>
+		</element>
+	</columnFooter>
+	<pageFooter height="20" splitType="Stretch">
+		<element kind="textField" uuid="5a79d2a0-bcde-4ad5-adf0-c4eb2066f6dd" x="0" y="0" width="197" height="20" fontSize="10.0" pattern="EEEEE dd MMMMM yyyy" bold="false" style="Column header">
+			<expression><![CDATA[new java.util.Date()]]></expression>
+		</element>
+	</pageFooter>
+	<summary splitType="Stretch"/>
+</jasperReport>
