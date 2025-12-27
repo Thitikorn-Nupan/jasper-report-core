@@ -1,0 +1,183 @@
+<!-- Created with Jaspersoft Studio version 7.0.3.final using JasperReports Library version 7.0.3-41034ca841d452f3305ba55b9042260aaa1ab5dd  -->
+<jasperReport name="students-list" language="java" pageWidth="595" pageHeight="350" columnWidth="555" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="c51ad21b-aa1c-447f-bd4e-8377618fcdfb">
+	<property name="ireport.zoom" value="1.0"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="First Report using MySQL"/>
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<query language="SQL"><![CDATA[SELECT sd.* from one_to_many_2.students AS sd;]]></query>
+	<field name="student_id" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="student_id"/>
+		<property name="com.jaspersoft.studio.field.label" value="student_id"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="student_fullname" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="student_fullname"/>
+		<property name="com.jaspersoft.studio.field.label" value="student_fullname"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="student_weight" class="java.lang.Float">
+		<property name="com.jaspersoft.studio.field.name" value="student_weight"/>
+		<property name="com.jaspersoft.studio.field.label" value="student_weight"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="student_height" class="java.math.BigDecimal">
+		<property name="com.jaspersoft.studio.field.name" value="student_height"/>
+		<property name="com.jaspersoft.studio.field.label" value="student_height"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="student_grade" class="java.lang.Integer">
+		<property name="com.jaspersoft.studio.field.name" value="student_grade"/>
+		<property name="com.jaspersoft.studio.field.label" value="student_grade"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<field name="currentdatetime" class="java.lang.String">
+		<property name="com.jaspersoft.studio.field.name" value="currentdatetime"/>
+		<property name="com.jaspersoft.studio.field.label" value="currentdatetime"/>
+		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
+	</field>
+	<pageHeader height="53">
+		<element kind="staticText" uuid="09a8621d-cee2-45ef-9c91-0fdf0154dd0e" x="1" y="0" width="559" height="40" fontSize="22.0" bold="true" italic="false" hTextAlign="Center" vTextAlign="Middle">
+			<text><![CDATA[STUDENTS LIST]]></text>
+		</element>
+		<element kind="image" uuid="0fe4cec4-d80a-490c-9ffb-bef467b8053f" x="0" y="0" width="100" height="40">
+			<expression><![CDATA["C:/Users/User/OneDrive/desktop/jasper-ic.png"]]></expression>
+		</element>
+	</pageHeader>
+	<columnHeader height="20" splitType="Stretch">
+		<element kind="staticText" uuid="a5237c32-d009-489d-b664-69fdad2bb1cd" x="1" y="0" width="51" height="20" fontSize="15.0" bold="true" italic="false" hTextAlign="Center">
+			<text><![CDATA[ID]]></text>
+			<box>
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.25"/>
+				<leftPen lineWidth="0.25"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.25"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="9f53e136-c945-41c7-9e37-2ff363df5e7d" x="52" y="0" width="159" height="20" fontSize="15.0" bold="true" italic="false" hTextAlign="Center">
+			<text><![CDATA[FULLNAME]]></text>
+			<box>
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.25"/>
+				<leftPen lineWidth="0.25"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.25"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="618033d2-a415-4315-8f4b-d5e67727ee58" x="211" y="0" width="80" height="20" fontSize="15.0" bold="true" italic="false" hTextAlign="Center">
+			<text><![CDATA[WEIGHT]]></text>
+			<box>
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.25"/>
+				<leftPen lineWidth="0.25"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.25"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="9df1258f-6614-443f-8364-6954475dd4bc" x="291" y="0" width="89" height="20" fontSize="15.0" bold="true" italic="false" hTextAlign="Center">
+			<text><![CDATA[HEIGHT]]></text>
+			<box>
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.25"/>
+				<leftPen lineWidth="0.25"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.25"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="c0462de9-ac97-4baa-958a-8c2c4d727072" x="380" y="0" width="70" height="20" fontSize="15.0" bold="true" italic="false" hTextAlign="Center">
+			<text><![CDATA[GRADE]]></text>
+			<box>
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.25"/>
+				<leftPen lineWidth="0.25"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.25"/>
+			</box>
+		</element>
+		<element kind="staticText" uuid="53b0b3be-70f8-40f9-8a1c-ab0cb8671f60" x="450" y="0" width="110" height="20" fontSize="15.0" bold="true" italic="false" hTextAlign="Center">
+			<text><![CDATA[DATETIME]]></text>
+			<box>
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.25"/>
+				<leftPen lineWidth="0.25"/>
+				<bottomPen lineWidth="0.0" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.25"/>
+			</box>
+		</element>
+	</columnHeader>
+	<detail>
+		<band height="14" splitType="Stretch">
+			<element kind="textField" uuid="fd09b48e-3bab-436c-8f5b-08f868b0ada0" x="1" y="0" width="51" height="14" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{student_id}]]></expression>
+				<box>
+					<pen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="40e29be5-cdd9-409a-a658-8170b7f48335" x="52" y="0" width="159" height="14" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{student_fullname}]]></expression>
+				<box>
+					<pen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="f05cbafb-5573-4949-af01-4a77d5663b55" x="211" y="0" width="80" height="14" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{student_weight}]]></expression>
+				<box>
+					<pen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="969ea21d-1f57-4c5b-ae19-130adab42ccc" x="291" y="0" width="89" height="14" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{student_height}]]></expression>
+				<box>
+					<pen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="00af30b0-e05e-450f-bacc-6a5139d70ee0" x="380" y="0" width="70" height="14" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{student_grade}]]></expression>
+				<box>
+					<pen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+			</element>
+			<element kind="textField" uuid="240cdb40-5cc6-4da0-be84-6e8a9123049f" x="450" y="0" width="110" height="14" hTextAlign="Center" vTextAlign="Middle">
+				<expression><![CDATA[$F{currentdatetime}]]></expression>
+				<box>
+					<pen lineWidth="0.25"/>
+					<leftPen lineWidth="0.25"/>
+					<rightPen lineWidth="0.25"/>
+				</box>
+			</element>
+		</band>
+	</detail>
+	<columnFooter height="30">
+		<element kind="staticText" uuid="a5237c32-d009-489d-b664-69fdad2bb1cd" x="0" y="10" width="140" height="20" fontSize="15.0" bold="true" italic="false" hTextAlign="Center">
+			<text><![CDATA[Total Students]]></text>
+			<box>
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.25"/>
+				<leftPen lineWidth="0.25"/>
+				<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.25"/>
+			</box>
+		</element>
+		<element kind="textField" uuid="edbbfa0a-96cd-47a3-b4d5-e948a09556c8" x="140" y="10" width="90" height="20" fontSize="15.0" hTextAlign="Center">
+			<expression><![CDATA[$V{REPORT_COUNT}]]></expression>
+			<box>
+				<pen lineWidth="0.25"/>
+				<topPen lineWidth="0.25"/>
+				<leftPen lineWidth="0.25"/>
+				<bottomPen lineWidth="0.25" lineStyle="Solid" lineColor="#000000"/>
+				<rightPen lineWidth="0.25"/>
+			</box>
+		</element>
+	</columnFooter>
+</jasperReport>
