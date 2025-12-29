@@ -41,7 +41,7 @@ FROM one_to_many_2.students]]></query>
 		<property name="com.jaspersoft.studio.field.label" value="student_grade"/>
 		<property name="com.jaspersoft.studio.field.tree.path" value="students"/>
 	</field>
-	<background splitType="Stretch">
+	<background height="34" splitType="Stretch">
 		<property name="com.jaspersoft.studio.layout" value="com.jaspersoft.studio.editor.layout.HorizontalRowLayout"/>
 	</background>
 	<title height="50" splitType="Stretch">
@@ -126,7 +126,7 @@ FROM one_to_many_2.students]]></query>
 		</element>
 	</columnHeader>
 	<detail>
-		<band height="20" splitType="Stretch">
+		<band height="46" splitType="Stretch">
 			<element kind="textField" uuid="6b1bba91-bc4d-42dd-8890-f9842abbbe35" x="47" y="0" width="92" height="20" hTextAlign="Center" vTextAlign="Middle">
 				<expression><![CDATA[$F{student_id}]]></expression>
 				<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="053d037c-7d51-4a57-b051-5bbefe3f45f6"/>
